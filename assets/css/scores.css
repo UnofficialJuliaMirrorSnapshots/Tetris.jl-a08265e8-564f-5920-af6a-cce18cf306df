@@ -1,0 +1,91 @@
+.cs-scores-screen {
+  pointer-events: none;
+  text-align: center;
+
+  opacity: 0.84;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.cs-scores-screen *:not(input) {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.cs-scores-screen td {
+  text-align: left;
+}
+
+.cs-tetris-container:not(.cs-has-splash) .cs-scores-screen {
+  opacity: 0;
+}
+
+.cs-jumbotron {
+  opacity: 0.96;
+  height: calc(100% - 150px);
+  margin: 75px 12%;
+  width: 76%;
+}
+
+.cs-jumbotron .row {
+  pointer-events: initial;
+  height: 100%;
+}
+
+.cs-jumbotron .row:not(.cs-mobile) > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-jumbotron .row:not(.cs-mobile) > div:last-child > div {
+  height: 100%;
+  overflow: scroll;
+}
+
+.cs-jumbotron .row:not(.cs-mobile) > div:last-child table {
+  height: 100%;
+}
+
+.cs-jumbotron table {
+  text-transform: uppercase;
+}
+
+.rendered_html .cs-jumbotron h1, .rendered_html .cs-jumbotron h2 {
+  margin: 0;
+  line-height: 2;
+}
+
+.cs-mobile-scores {
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cs-new-score {
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cs-new-score .form-control {
+  width: initial;
+  margin-top: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cs-scores-screen.js-new-score {
+  opacity: 1.0;
+}

@@ -1,0 +1,44 @@
+.cs-has-splash .cs-splash-screen {
+  pointer-events: initial;
+}
+
+.cs-splash-screen {
+  pointer-events: none;
+  opacity: 0.84;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.cs-splash-screen * {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.cs-splash-screen.cs-disappear {
+  opacity: 0;
+}
+
+.cs-splash-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1.08em;
+}
+
+.cs-how-to {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1.08em;
+  margin-right: 1.08em;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  opacity: 0.9;
+}
